@@ -1,5 +1,6 @@
 package gamesmc.tools;
 
+import gamesmc.tools.commands.FlyCommand;
 import gamesmc.tools.commands.GamemodeCommand;
 import gamesmc.tools.commands.OnlineCommand;
 import gamesmc.tools.commands.ToolsCommand;
@@ -49,6 +50,7 @@ public final class Tools extends JavaPlugin {
         new ToolsCommand().register(getCommand("tools"));
         new OnlineCommand().register(getCommand("online"));
         new GamemodeCommand().register(getCommand("gamemode"));
+        new FlyCommand().register(getCommand("fly"));
 
         // GUIS
         new CraftingTable().register(getCommand("crafting"));
